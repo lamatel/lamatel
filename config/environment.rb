@@ -5,7 +5,7 @@
 # ENV['RAILS_ENV'] ||= 'production'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-SPREE_GEM_VERSION = '0.9.2' unless defined? SPREE_GEM_VERSION
+SPREE_GEM_VERSION = '0.9.4' unless defined? SPREE_GEM_VERSION
           
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -40,8 +40,6 @@ Spree::Initializer.run do |config|
   config.gem 'searchlogic', :version => '>= 2.3.5'
   config.gem 'mislav-will_paginate', :version => '~> 2.3.11', :lib => 'will_paginate', 
         :source => 'http://gems.github.com'
-  # config.gem 'prawn', :version => '>=0.7.1'
-  # config.gem 'prawn-layout', :lib => 'prawn/layout', :version => '>=0.7.1'
 
 
   # Only load the plugins named here, in the order given. By default, all plugins 
@@ -49,6 +47,7 @@ Spree::Initializer.run do |config|
   # :all can be used as a placeholder for all plugins not explicitly named
   # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
   config.plugins = [ :all, :resource_controller, :extension_patches ] 
+  config.extensions = [ :all, :lamatel_theme, :site ]
   
   # Add additional load paths for your own custom dirs
   # config.load_paths += %W( #{RAILS_ROOT}/extras )

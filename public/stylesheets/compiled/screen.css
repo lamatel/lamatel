@@ -776,6 +776,7 @@ textarea {
   width: 390px;
   height: 250px; }
 
+
 .box {
   padding: 1.5em;
   margin-bottom: 1.5em;
@@ -815,7 +816,7 @@ hr.space {
 
 body {
   margin-top: 10px;
-  background: #fff url(/images/body-back.png) top left repeat-x; }
+  background: #fff url(../../images/body-back.png) top left repeat-x; }
   body div.left {
     float: left;
     width: 49%; }
@@ -827,11 +828,11 @@ body {
     outline: none; }
 
 #wrapper {
-  background: transparent url(/images/wrapper-back.png) top center no-repeat;
+  background: transparent url(../../images/wrapper-back.png) top center no-repeat;
   padding: 25px 20px 20px;
   position: relative; }
   body.two-col #wrapper {
-    background-image: url(/images/wrapper-back-2.png); }
+    background-image: url(../../images/wrapper-back-2.png); }
 
 #sidebar {
   display: inline;
@@ -914,12 +915,12 @@ p img {
       white-space: nowrap;
       overflow: hidden; }
     .navigation-list li a:hover {
-      background: url(/images/menu-hover.png) right center no-repeat; }
+      background: url(../../images/menu-hover.png) right center no-repeat; }
   .navigation-list li.current {
     width: 200px; }
     .navigation-list li.current a {
       width: 180px;
-      background: url(/images/menu-current.png) right center no-repeat;
+      background: url(../../images/menu-current.png) right center no-repeat;
       white-space: nowrap;
       overflow: hidden; }
       .navigation-list li.current a.root {
@@ -983,9 +984,9 @@ ul#nav-bar {
     ul#nav-bar li.cart-indicator a {
       display: block;
       padding-right: 40px;
-      background: transparent url(/images/cart-empty_x32.png) center right no-repeat; }
+      background: transparent url(../../images/cart-empty_x32.png) center right no-repeat; }
       ul#nav-bar li.cart-indicator a.full {
-        background-image: url(/images/cart-full_x32.png); }
+        background-image: url(../../images/cart-full_x32.png); }
 
 .pagination {
   padding-top: 10px;
@@ -1041,6 +1042,14 @@ ul#nav-bar {
     #signup #new-customer p input.title, #login #existing-customer p input.title {
       padding: 3px;
       margin: 0px; }
+  #signup #new-customer input[type=checkbox], #login #existing-customer input[type=checkbox] {
+    top: 0.0em; }
+
+input.openid_url {
+  background: #FFFFFF url(../../images/openid-inputicon.gif) no-repeat scroll 0pt 50%;
+  padding-left: 18px;
+  border: 1px solid #BBBBBB;
+  font-size: 1.5em; }
 
 .flash {
   -moz-border-radius: 5px;
@@ -1050,11 +1059,11 @@ ul#nav-bar {
     margin-bottom: 1em;
     padding: 0.8em; }
   .flash.notice {
-    background: #ccddff url(/images/shadow_top.png) 0px -50px repeat-x;
+    background: #ccddff url(../../images/shadow_top.png) 0px -50px repeat-x;
     color: #556699;
     border: 1px solid #99aacc; }
   .flash.errors {
-    background: #f4b4b4 url(/images/shadow_top.png) 0px -50px repeat-x;
+    background: #f4b4b4 url(../../images/shadow_top.png) 0px -50px repeat-x;
     color: black;
     border: 1px solid black; }
 
@@ -1064,7 +1073,7 @@ ul#nav-bar {
   padding: 0.8em;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  background: #f4b4b4 url(/images/shadow_top.png) 0px -50px repeat-x;
+  background: #f4b4b4 url(../../images/shadow_top.png) 0px -50px repeat-x;
   color: black;
   border: 1px solid black; }
   .formError p, .errorExplanation p {
@@ -1083,7 +1092,7 @@ button,
 a.button, input.button {
   -moz-border-radius: 0.3em;
   -webkit-border-radius: 0.3em;
-  background: #efefef url(/images/buttons/bg-button.png) center left repeat-x !important;
+  background: #efefef url(../../images/buttons/bg-button.png) center left repeat-x !important;
   border-style: solid;
   border-width: 1px !important;
   border-color: #ddd #999 #999 #ddd !important;
@@ -1112,7 +1121,7 @@ a.button, input.button {
     color: #000; }
   button:hover,
   a.button:hover, input.button:hover {
-    background-image: url(/images/buttons/bg-button-hover.png) !important; }
+    background-image: url(../../images/buttons/bg-button-hover.png) !important; }
   button.large,
   a.button.large, input.button.large {
     -moz-border-radius: 5px;
@@ -1174,7 +1183,7 @@ p a.button img, p button img {
       padding: 5px;
       width: 150px;
       min-height: 60px;
-      background: #FFF url(/images/shadow_top.png) 0px -35px repeat-x;
+      background: #FFF url(../../images/shadow_top.png) 0px -35px repeat-x;
       border-top: 1px solid white; }
       .product-listing li a.info span {
         display: block; }
@@ -1183,7 +1192,7 @@ p a.button img, p button img {
     .product-listing li:hover {
       border-color: #1B1B1B; }
       .product-listing li:hover a.info {
-        background: #1B1B1B url(/images/bottom_shine.png) bottom left repeat-x;
+        background: #1B1B1B url(../../images/bottom_shine.png) bottom left repeat-x;
         color: #fff; }
 
 ul.thumbnails {
@@ -1259,6 +1268,18 @@ ul.thumbnails {
   margin-right: 0;
   width: 270px; }
   * html #cart-form {
+    overflow-x: hidden; }
+
+#taxon-crumbs {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  display: block;
+  float: right;
+  margin-top: 20px;
+  width: 300px; }
+  * html #taxon-crumbs {
     overflow-x: hidden; }
 
 div#subtotal {
@@ -1351,6 +1372,8 @@ div#checkout {
     div#checkout #registration div#registration_input {
       float: left;
       margin-left: 100px; }
+      div#checkout #registration div#registration_input p {
+        width: 365px; }
     div#checkout #registration div#guest_user, div#checkout #registration div#existing_user, div#checkout #registration div#already_logged_in {
       display: none; }
   div#checkout #billing {
@@ -1385,7 +1408,7 @@ div#checkout {
       div#checkout #shipping span#checkout_same_address:hover {
         cursor: pointer; }
       div#checkout #shipping span#checkout_same_address.is_checked {
-        background: transparent url(/images/checkmark.png) top right no-repeat; }
+        background: transparent url(../../images/checkmark.png) top right no-repeat; }
     div#checkout #shipping.completed h2, div#checkout #shipping.disabled h2 {
       padding-left: 32px; }
   div#checkout #shipping_method {
@@ -1467,6 +1490,7 @@ div#order table.order-summary .total_display {
     text-align: right;
     padding-right: 150px; }
 
+
 tbody#order-credits {
   color: #f00; }
 
@@ -1478,3 +1502,7 @@ div#checkout-summary {
   margin-top: 10px; }
   div#checkout-summary th, div#checkout-summary td, div#checkout-summary caption {
     padding: 0px; }
+
+input.text, input.title, input[type="text"] {
+  padding: 1px 0px;
+  margin: 0; }
