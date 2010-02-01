@@ -7,6 +7,17 @@ class SnippetsExtension < Spree::Extension
   # in any view. Admin will control content via /admin/snippets.
   def activate
 
+    Admin::BaseController.class_eval do
+      before_filter :add_snippets_tab
+    
+      def add_snippets_tab
+        # add_extension_admin_tab takes an array containing the same arguments expected
+        # by the tab helper method:
+        #   [ :extension_name, { :label => "Your Extension", :route => "/some/non/standard/route" } ]
+        add_extension_admin_tab [ :snippets, { :label => t("Snippets"), :route => :admin_snippets } ]
+      end
+    end
+    
     Spree::BaseController.class_eval do
 
       helper_method :render_snippet

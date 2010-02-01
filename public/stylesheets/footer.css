@@ -2,12 +2,11 @@
 .quarter-column {
 	width: 25%;
 }
-
 #footer {
-  padding-top: 2em;
+  margin: 3em 2em;
+	padding: 2em;
   clear: both;
 }
-
 #footer div.left,
 #footer div.right { 
 	width: 50%;
@@ -15,10 +14,24 @@
 	text-align: left;
 	margin: 0 auto;
 }
-
 #footer p,
 #footer h4 {
 	margin: 0;
 	padding: 0;
 }
-
+#footer #footer-customer-service,
+#footer #footer-shopping-with-us {
+	float: left;
+	width: 50%;
+	vertical-align: middle;
+	text-align: left;
+	margin: 0 auto;
+}
+#footer #footer-about-lamatel,
+#footer #footer-sales {
+	float: right;
+	width: 50%;
+	vertical-align: middle;
+	text-align: left;
+	margin: 0 auto;
+}
