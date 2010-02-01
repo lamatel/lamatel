@@ -1,3 +1,0 @@
-class Page < WsItem
-
-end
